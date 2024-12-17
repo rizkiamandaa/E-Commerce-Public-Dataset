@@ -1,0 +1,18 @@
+Library yang digunakan untuk analisis data
+
+IDCAMP.ipynb :
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import streamlit as st
+
+Library yang digunakan untuk membuat dashboard
+
+Dashboard.py :
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import streamlit as st
+import os
