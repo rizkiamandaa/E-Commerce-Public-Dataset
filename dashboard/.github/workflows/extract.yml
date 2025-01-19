@@ -16,7 +16,7 @@ jobs:
     - name: Extract ZIP file
       run: |
         mkdir extracted
-        unzip all_df.zip -d extracted
+        unzip E-Commerce-Public-Dataset/dashboard/all_df.zip -d extracted
 
     - name: Commit extracted CSV file
       run: |
