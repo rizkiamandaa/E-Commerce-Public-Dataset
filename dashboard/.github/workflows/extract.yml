@@ -1,0 +1,28 @@
+name: Extract ZIP and Save as CSV
+
+on:
+  push:
+    branches:
+      - main  # Ganti dengan branch yang sesuai
+
+jobs:
+  extract-and-save:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Extract ZIP file
+      run: |
+        mkdir extracted
+        unzip all_df.zip -d extracted
+
+    - name: Commit extracted CSV file
+      run: |
+        cp extracted/all_df.csv .  # Pindahkan CSV ke direktori root
+        git config --global user.name "Your Name"
+        git config --global user.email "youremail@example.com"
+        git add all_df.csv
+        git commit -m "Add extracted CSV"
+        git push
