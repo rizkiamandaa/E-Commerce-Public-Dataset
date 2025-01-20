@@ -38,7 +38,7 @@ st.markdown("""
 
 # In[2]:
 
-all_df = pd.read_csv("all_df.csv")
+all_df = pd.read_csv("dashboard/all_df.csv")
 all_df.head()
 
 # In[3]:
